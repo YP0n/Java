@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Convert {
+    public static void main(String[] args) {
+        System.out.println("What is Bitcoin price today?");
+        Scanner scanner = new Scanner(System.in);
+        double bitcoin = scanner.nextDouble();
+        System.out.println("How much $ do you have?");
+        double dollar = scanner.nextDouble();
+        double exchenge = dollar / bitcoin;
+        System.out.println("You can buy " + exchenge + " BTC");
+    }
+}
